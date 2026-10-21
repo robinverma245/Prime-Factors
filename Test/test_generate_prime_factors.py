@@ -17,7 +17,9 @@ def test_one():
 def test_two():
     """Check that 2 returns [2]."""
     assert generate_prime_factors(2) == [2]
-
+def test_six():
+    """Check that 6 returns [2, 3]."""
+    assert generate_prime_factors(6) == [2, 3]
 
 def test_three():
     """Check that 3 returns [3]."""
