@@ -7,3 +7,4 @@ def generate_prime_factors(number):
     if type(number) is not int:
         raise ValueError("Input must be an integer")
     return []
+
