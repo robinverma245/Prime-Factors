@@ -5,8 +5,16 @@ def generate_prime_factors(number):
     """Return prime factors of an integer."""
     if type(number) is not int:
         raise ValueError("Input must be an integer")
+    factors = []
+    divisor = 2
 
-    if number == 1:
-        return []
+    while divisor * divisor <= number:
+        while number % divisor == 0:
+            factors.append(divisor)
+            number //= divisor
+        divisor += 1
 
-    return [number]
+    if number > 1:
+        factors.append(number)
+
+    return factors
