@@ -17,3 +17,13 @@ def test_one():
 def test_two():
     """Check that 2 returns [2]."""
     assert generate_prime_factors(2) == [2]
+
+
+def test_three():
+    """Check that 3 returns [3]."""
+    assert generate_prime_factors(3) == [3]
+
+
+def test_four():
+    """Check that 4 returns [2, 2]."""
+    assert generate_prime_factors(4) == [2, 2]
