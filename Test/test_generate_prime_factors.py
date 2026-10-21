@@ -41,3 +41,7 @@ def test_nine():
 def test_ten():
     """Check that 10 returns [2, 5]."""
     assert generate_prime_factors(10) == [2, 5]
+
+def test_twelve():
+    """Check that 12 returns [2, 2, 3]."""
+    assert generate_prime_factors(12) == [2, 2, 3]
