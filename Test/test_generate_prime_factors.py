@@ -14,3 +14,6 @@ def test_invalid_input():
 def test_one():
     """Check that 1 returns an empty list."""
     assert generate_prime_factors(1) == []
+def test_two():
+    """Check that 2 returns [2]."""
+    assert generate_prime_factors(2) == [2]
