@@ -29,3 +29,7 @@ def test_three():
 def test_four():
     """Check that 4 returns [2, 2]."""
     assert generate_prime_factors(4) == [2, 2]
+
+def test_eight():
+    """Check that 8 returns [2, 2, 2]."""
+    assert generate_prime_factors(8) == [2, 2, 2]
