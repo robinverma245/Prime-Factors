@@ -3,8 +3,9 @@
 
 def generate_prime_factors(number):
     """Return prime factors of an integer."""
-    if type(number) is not int:
+    if not isinstance(number, int):
         raise ValueError("Input must be an integer")
+
     factors = []
     divisor = 2
 
